@@ -1,8 +1,8 @@
 # The Homebrew cask for icecap. Scripts/release.sh writes build/icecap.rb from this file,
 # with the version and checksum filled in, for the tap at fluffyrabbot/homebrew-tap.
 cask "icecap" do
-  version "0.1.1"
-  sha256 "b0da48c2a081c5a282ad892e364febc1acdb374c305806906e9eb3eecfdbbd4f"
+  version "0.1.2"
+  sha256 "8ee519e1bcb718d8d0909f71b1a5f5c1dae887a5643a90b407dbb8707e2586d6"
 
   url "https://github.com/fluffyrabbot/icecap/releases/download/v#{version}/icecap-#{version}.dmg"
   name "icecap"
@@ -21,5 +21,8 @@ cask "icecap" do
 
   uninstall quit: "com.memorysynchub.icecap"
 
-  zap trash: "~/Library/Preferences/com.memorysynchub.icecap.plist"
+  zap trash: [
+    "~/Library/Preferences/com.memorysynchub.icecap.plist",
+    "~/Library/Preferences/com.memorysynchub.icecap.spacer.plist",
+  ]
 end
