@@ -1,8 +1,8 @@
 # The Homebrew cask for icecap. Scripts/release.sh writes build/icecap.rb from this file,
 # with the version and checksum filled in, for the tap at fluffyrabbot/homebrew-tap.
 cask "icecap" do
-  version "0.1.0"
-  sha256 "40ee5fdbc49602c922c1b5a4431ce0024f3082b2a1582838bb07b6f633712ad9"
+  version "0.1.1"
+  sha256 "b0da48c2a081c5a282ad892e364febc1acdb374c305806906e9eb3eecfdbbd4f"
 
   url "https://github.com/fluffyrabbot/icecap/releases/download/v#{version}/icecap-#{version}.dmg"
   name "icecap"
